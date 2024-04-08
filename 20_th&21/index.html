@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade</title>
+    <style>
+        h1{
+            color: red;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cpurple{
+            color: aqua;
+        }
+        .cred{
+            color: brown;
+        }
+
+        /* Cascade Algorithm : In same selector Last one will be given preference */
+        /* Specificity : Inline Style ID Selector Class/Attribute Selector Element Slector Universal selector */
+        /* origin : User agent stylesheet */
+        /* custom : important selector */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="Yellow cred cpurple">I am a student</h1>
+    </div>
+    
+</body>
+</html>
